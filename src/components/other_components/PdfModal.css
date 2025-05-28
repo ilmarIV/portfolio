@@ -11,17 +11,6 @@
   z-index: 2000;
 }
 
-.pdf-modal {
-  background-color: #222;
-  padding: 1rem;
-  border-radius: 10px;
-  position: relative;
-  max-width: 80%;
-  max-height: 90%;
-  overflow: auto;
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
-}
-
 .close-btn {
   position: absolute;
   top: 10px;
@@ -31,4 +20,20 @@
   color: #00FF41;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.pdf-modal {
+  width: 80vw;
+  height: 90vh;
+  background-color: #111;
+  padding: 1rem;
+  overflow: auto;
+  position: relative;
+}
+
+.pdf-modal canvas {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
 }

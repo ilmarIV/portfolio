@@ -1,13 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import PdfModal from '..other_components/PdfModal';
 import resumePdf from '../../res/resume.pdf';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef(null);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -30,19 +27,28 @@ const Navbar = () => {
       <div className="nav-content">
         <a href="#showcase" className="logo" onClick={() => setIsOpen(false)}>VI</a>
 
-        <div className="hamburger" onClick={toggleMenu}>
-          <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-          <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-          <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-        </div>
-
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           <li><a href="#showcase" onClick={() => setIsOpen(false)}><span>00. </span>About</a></li>
           <li><a href="#projects" onClick={() => setIsOpen(false)}><span>01. </span>Projects</a></li>
           <li><a href="#contact" onClick={() => setIsOpen(false)}><span>02. </span>Contact</a></li>
         </ul>
 
+        <div className="right-controls">
+          <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+            <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+            <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+          </div>
 
+          <a
+            href={resumePdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pdf-button"
+          >
+            View Resume
+          </a>
+        </div>
       </div>
     </nav>
   );

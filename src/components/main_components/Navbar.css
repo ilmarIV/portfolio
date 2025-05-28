@@ -12,15 +12,18 @@
   z-index: 1000;
   padding: 1rem 2rem;
   color: white;
+  width: 100%;
 }
 
 .nav-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
 }
 
+/* Left: logo */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -29,11 +32,13 @@
   cursor: pointer;
 }
 
+/* Nav links */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
   transition: all 0.3s ease;
+  margin-left: auto; /* push to right on desktop */
 }
 
 .nav-links a {
@@ -43,7 +48,6 @@
 }
 
 .nav-links a span {
-  text-decoration: none;
   color: #00FF41;
   font-weight: 500;
   font-size: small;
@@ -53,7 +57,30 @@
   color: #00FF41;
 }
 
-/* Hamburger menu */
+/* Right controls wrapper (hamburger + resume button on mobile) */
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Resume button */
+.pdf-button {
+  background-color: #0e1111;
+  color: #00FF41;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #00FF41;
+  white-space: nowrap;
+}
+
+.pdf-button:hover {
+  background-color: #1a1f1f;
+}
+
+/* Hamburger menu (hidden on desktop) */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -71,10 +98,11 @@
   background-color: #00FF41;
 }
 
-/* Responsive Styles */
+/* Responsive styles */
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
+
+  .nav-content {
+    /* stack items horizontally */
   }
 
   .nav-links {
@@ -86,9 +114,32 @@
     background-color: #0e1111;
     padding: 1rem 2rem;
     display: none;
+    margin-left: 0;
   }
 
   .nav-links.active {
     display: flex;
+  }
+
+  /* On mobile, move nav-links to first and hide from flex line */
+  .nav-links {
+    order: 3;
+  }
+
+  /* Hamburger and resume on right, side by side */
+  .right-controls {
+    order: 2;
+    margin-left: auto; /* push right */
+    gap: 0.5rem;
+  }
+
+  /* Show hamburger on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Make sure resume button stays next to hamburger */
+  .pdf-button {
+    order: 2;
   }
 }
