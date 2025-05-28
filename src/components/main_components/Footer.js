@@ -1,8 +1,10 @@
+import './Footer.css'
+
 const Footer = () => {
   return (
-    <>
-    <p>footer section</p>
-    </>
+    <footer>
+      <p>&copy;{new Date().getFullYear()}</p>
+    </footer>
   );
 };
 

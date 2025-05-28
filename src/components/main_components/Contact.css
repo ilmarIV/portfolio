@@ -1,0 +1,36 @@
+#contact {
+  background-color: #0e1111;
+  padding: 3rem 4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100vw;
+  margin: 0;
+  text-align: left;
+  /* Removed border-radius */
+}
+
+#contact h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff41;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+#contact strong {
+  color: #dddddd;
+}
+
+#contact svg {
+  color: #00ff41;
+  flex-shrink: 0;
+}

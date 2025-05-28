@@ -1,0 +1,14 @@
+footer {
+  background-color: #0e1111;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  user-select: none;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}
