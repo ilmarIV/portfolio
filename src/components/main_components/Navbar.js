@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import PdfModal from '..other_components/PdfModal';
+import resumePdf from '../../res/resume.pdf';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -39,6 +41,8 @@ const Navbar = () => {
           <li><a href="#projects" onClick={() => setIsOpen(false)}><span>01. </span>Projects</a></li>
           <li><a href="#contact" onClick={() => setIsOpen(false)}><span>02. </span>Contact</a></li>
         </ul>
+
+
       </div>
     </nav>
   );
