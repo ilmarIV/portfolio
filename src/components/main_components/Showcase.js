@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../res/dokumendipilt.jpg';
+import profileImg from '../../res/dokumendipilt.png';
 import './Showcase.css'
 
 const Showcase = () => {
