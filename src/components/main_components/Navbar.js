@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <li><a href="#showcase" onClick={() => setIsOpen(false)}><span>00. </span>Showcase</a></li>
+          <li><a href="#showcase" onClick={() => setIsOpen(false)}><span>00. </span>About</a></li>
           <li><a href="#projects" onClick={() => setIsOpen(false)}><span>01. </span>Projects</a></li>
           <li><a href="#contact" onClick={() => setIsOpen(false)}><span>02. </span>Contact</a></li>
         </ul>
