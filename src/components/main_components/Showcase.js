@@ -1,6 +1,7 @@
 const Showcase = () => {
   return (
     <>
+    <p>showcase section</p>
     </>
   );
 };

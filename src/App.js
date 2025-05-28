@@ -1,8 +1,8 @@
-import Navbar from './main_components/Navbar'
-import Showcase from './main_components/Showcase'
-import Projects from './main_components/Projects'
-import Contact from './main_components/Contact'
-import Footer from './main_components/Footer'
+import Navbar from './components/main_components/Navbar'
+import Showcase from './components/main_components/Showcase'
+import Projects from './components/main_components/Projects'
+import Contact from './components/main_components/Contact'
+import Footer from './components/main_components/Footer'
 
 function App() {
   return (
