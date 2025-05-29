@@ -1,13 +1,27 @@
+// components/Projects/Projects.js
+
+import React, { useState } from 'react';
+import saew2rkImg from '../../res/saew2rk.png';
+import './Projects.css';
+import ProjectModal from './ProjectModal';
+
 const Projects = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section id="projects">
-      <div>
-        <h1>First Client Project</h1>
-        <h4>Year: 2025</h4>
-        <p>This project involved developing a landing-page style website for a company in the sawmill industry. The website was built using React and Bootstrap, and was deployed using the Zone hosting service. In addition to the public-facing site, the project included the development of an admin panel, allowing the client to easily update page content and manage images.</p>
-        <h4>My Role:</h4>
-        <p>I was primarily responsible for design and testing. I created interactive prototypes and focused on the UI/UX design of the website to ensure a user-friendly experience. Additionally, I conducted manual testing and produced relevant documentation to support project delivery and handover.</p>
+      <div className="project-card" onClick={() => setIsOpen(true)}>
+        <img src={saew2rkImg} alt="Ilmar Vodi" />
+        <h1>My First Client Project</h1>
       </div>
+
+      <ProjectModal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        image={saew2rkImg}
+        title="My First Client Project"
+      />
+      <h2>More projects coming soon...</h2>
     </section>
   );
 };
