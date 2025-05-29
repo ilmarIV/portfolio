@@ -15,8 +15,7 @@
     "react-icons": "^5.5.0",
     "react-pdf": "^9.2.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://vso24vodi.ita.voco.ee/portfolio"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
