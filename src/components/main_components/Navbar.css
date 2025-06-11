@@ -32,6 +32,11 @@
   cursor: pointer;
 }
 
+.logo img {
+  width: 32px;
+  margin-left: 5px;
+}
+
 /* Nav links */
 .nav-links {
   list-style: none;
