@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className="navbar" ref={navRef}>
       <div className="nav-content">
-        <a href="#showcase" className="logo" onClick={() => setIsOpen(false)}>VI</a>
+        <a href="#showcase" className="logo" onClick={() => setIsOpen(false)}>ilmar</a>
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           <li><a href="#showcase" onClick={() => setIsOpen(false)}><span>00. </span>About</a></li>

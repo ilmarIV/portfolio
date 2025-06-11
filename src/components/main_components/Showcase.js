@@ -7,7 +7,7 @@ const Showcase = () => {
     <section className="showcase" id="showcase">
       <div className="showcase-text">
         <h1>Greetings!</h1>
-        <h3>My name is Ilmar and welcome to my e-portfolio.</h3>
+        <h3>My name is <span className=''>Ilmar Vodi</span> and welcome to my e-portfolio.</h3>
         <p>
           I am a student at Tartu Vocational College, studying web development,
           software engineering, and design. I have a passion for coding and creating

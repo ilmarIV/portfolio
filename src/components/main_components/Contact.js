@@ -12,7 +12,7 @@ const Contact = () => {
       </p>
       <p>
         <MdOutlineLocalPhone size={"28px"} />
-        <strong>+372 53810246</strong>
+        <strong>+372 5381 0246</strong>
       </p>
     </section>
   );

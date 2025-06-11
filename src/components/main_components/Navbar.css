@@ -37,8 +37,7 @@
   list-style: none;
   display: flex;
   gap: 2rem;
-  transition: all 0.3s ease;
-  margin-left: auto; /* push to right on desktop */
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -74,6 +73,7 @@
   cursor: pointer;
   border: 1px solid #00FF41;
   white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
 .pdf-button:hover {
