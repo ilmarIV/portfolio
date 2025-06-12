@@ -1,14 +1,14 @@
 #contact {
   background-color: #0e1111;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem;
+  margin: 0 auto;               /* Center horizontally */
+  max-width: 1700px;            /* Constrain max width */
   color: white;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 100vw;
-  margin: 0;
   text-align: left;
-  /* Removed border-radius */
+  box-sizing: border-box;
 }
 
 #contact h3 {
@@ -33,4 +33,16 @@
 #contact svg {
   color: #00ff41;
   flex-shrink: 0;
+}
+
+@media (max-width: 1300px) {
+  #contact {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #contact {
+    padding: 2rem;
+  }
 }

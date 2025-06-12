@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import resumePdf from '../../res/resume.pdf';
 import './Navbar.css';
+import './global.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar" ref={navRef}>
-      <div className="nav-content">
+      <div className="w-1600 nav-content">
         <a href="#showcase" className="logo" onClick={() => setIsOpen(false)}>
           ilmar
           <img src='res/portfolio_logo.svg'/>

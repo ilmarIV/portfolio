@@ -1,7 +1,7 @@
 import React from 'react';
-import './ProjectModal.css';
+import './ProjectModal1.css';
 
-const ProjectModal = ({ isOpen, onClose, image, title }) => {
+const ProjectModal1 = ({ isOpen, onClose, image, title }) => {
   if (!isOpen) return null;
 
   return (
@@ -36,4 +36,4 @@ const ProjectModal = ({ isOpen, onClose, image, title }) => {
   );
 };
 
-export default ProjectModal;
+export default ProjectModal1;

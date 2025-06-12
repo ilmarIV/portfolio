@@ -1,10 +1,11 @@
 import React from 'react';
 import profileImg from '../../res/portrait.png';
 import './Showcase.css'
+import './global.css'
 
 const Showcase = () => {
   return (
-    <section className="showcase" id="showcase">
+    <section className="w-1600 showcase" id="showcase">
       <div className="showcase-text">
         <h1>Greetings!</h1>
         <h3>My name is <span className=''>Ilmar Vodi</span> and welcome to my e-portfolio.</h3>
