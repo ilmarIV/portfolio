@@ -55,8 +55,8 @@
 }
 
 .showcase-image img {
-  width: 375px;
-  height: 500px;
+  width: 280px;
+  height: auto;
   border-radius: 8px;
   object-fit: cover;
   display: block;
@@ -90,8 +90,8 @@
   }
 
   .showcase-image img {
-    width: 375px;
-    height: 500px;
+    width: 280px;
+    height: auto;
     object-fit: cover;
     display: block;
   }
@@ -119,8 +119,8 @@
   }
 
   .showcase-image img {
-    width: 375px;
-    height: 500px;
+    width: 280px;
+    height: auto;
     object-fit: cover;
     display: block;
   }
