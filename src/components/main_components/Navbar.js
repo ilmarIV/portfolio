@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="w-1600 nav-content">
         <a href="#showcase" className="logo" onClick={() => setIsOpen(false)}>
           ilmar
-          <img src='res/portfolio_logo.svg'/>
+          <img src='res/portfolio_logo.png'/>
         </a>
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>

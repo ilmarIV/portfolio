@@ -27,6 +27,7 @@
 
 .modal-content img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   border: 1px solid #00FF41;
   margin-bottom: 1rem;
