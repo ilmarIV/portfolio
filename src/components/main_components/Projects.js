@@ -1,28 +1,34 @@
-// components/Projects/Projects.js
-
 import React, { useState } from 'react';
-import saew2rkImg from '../../res/saew2rk.png';
+import projects from '../../res/descr_projects.json';
 import './Projects.css';
 import './global.css';
-import ProjectModal1 from './modals/ProjectModal1';
+import ProjectModal from './modals/ProjectModal';
 
 const Projects = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [activeProject, setActiveProject] = useState(null);
 
   return (
     <section className='w-1600' id="projects">
-      <div className="project-card" onClick={() => setIsOpen(true)}>
-        <img src={saew2rkImg} alt="Ilmar Vodi" />
-        <h1>My First Client Project</h1>
+      <div className='projects-wrapper'>
+        {projects.map((project, index) => (
+          <div
+            key={project.id || index}
+            className="project-card"
+            onClick={() => setActiveProject(project)}
+          >
+            <img src={project.image} alt={project.title} />
+            <h1>{project.title}</h1>
+          </div>
+        ))}
       </div>
 
-      <ProjectModal1
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        image={saew2rkImg}
-        title="My First Client Project"
-      />
-      <h2>More projects coming soon...</h2>
+      {activeProject && (
+        <ProjectModal
+          isOpen={!!activeProject}
+          onClose={() => setActiveProject(null)}
+          {...activeProject}
+        />
+      )}
     </section>
   );
 };

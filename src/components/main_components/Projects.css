@@ -1,11 +1,21 @@
 #projects {
+  padding: 2rem 4rem;
+  box-sizing: border-box;
   background-color: #0e1111;
-  color: white;
-  padding: 4rem 2rem 6rem 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* left-align cards inside */
+  gap: 2rem;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto; /* center wrapper itself */
 }
 
 .project-card {
@@ -13,7 +23,7 @@
   border: 2px solid #dddddd;
   border-radius: 12px;
   padding: 1rem;
-  max-width: 400px;
+  width: 400px;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 255, 65, 0.15);
   text-align: center;
@@ -26,10 +36,9 @@
 
 .project-card img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #dddddd;
-  transition: border-color 0.3s ease;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .project-card:hover img {
@@ -37,12 +46,19 @@
 }
 
 .project-card h1 {
-  color: #00FF41;
-  margin-top: 1rem;
   font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #00FF41;
 }
 
 #projects h2 {
   color: #dddddd;
   text-align: center;
+}
+
+@media (max-width: 950px) {
+  .projects-wrapper {
+    justify-content: center;
+}
 }

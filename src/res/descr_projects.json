@@ -1,0 +1,29 @@
+[
+  {
+    "index": 0,
+    "image": "/res/saew2rk.png",
+    "title": "My First Client Project",
+    "year": 2025,
+    "description":  "This project involved developing a landing-page style website for a company in the sawmill industry. The website was built using React and Bootstrap, and was deployed using the Zone hosting service. In addition to the public-facing site, the project included the development of an admin panel, allowing the client to easily update page content and manage images.",
+    "role": "I was primarily responsible for design and testing. I created interactive prototypes and focused on the UI/UX design of the website to ensure a user-friendly experience. Additionally, I conducted manual testing and produced relevant documentation to support project delivery and handover.",
+    "link": "https://xn--saewrk-eua.ee/"
+  },
+  {
+    "index": 1,
+    "image": "/res/saew2rk.png",
+    "title": "First dabble with php",
+    "year": 2025,
+    "description":  "This is a school project with the primary goal of utilizing databases. The application functions as a voting system, where the question to be voted on can be configured through an admin page. On the main page, users can enter their name and cast a vote either in favor of or against the question. Each voting session is limited to a duration of five minutes.",
+    "role": "The project team consisted of three members. My role was full-stack development, covering everything from implementing API calls in PHP to rendering all user interface elements in React.",
+    "link": "https://vso24saega.ita.voco.ee/Haaletussusteem/"
+  },
+  {
+    "index": 2,
+    "image": "/res/saew2rk.png",
+    "title": "This page, my portfolio",
+    "year": 2025,
+    "description":  "Well, my porfolio. The website is built using React without a backend. The main requirements are to clearly display all my skills as outlined in my résumé and to showcase some of the more interesting projects I have worked on. All styling is done using pure CSS.",
+    "role": "Since this is a solo project, I was responsible for all aspects of its development.",
+    "link": "https://vso24vodi.ita.voco.ee/portfolio/"
+  }
+]
