@@ -101,21 +101,24 @@
   .showcase {
     flex-direction: column;
     padding: 2rem;
-    align-items: flex-start;
   }
 
   .showcase-text {
     width: 100%;
     text-align: left;
     order: 1;
+    align-items: flex-start;
   }
 
   .showcase-image {
-    width: auto;
+    width: 100%;
     order: 2;
     overflow: visible;
     max-height: none;
     margin-top: 1.5rem;
+    
+    display: flex;
+    justify-content: center;
   }
 
   .showcase-image img {

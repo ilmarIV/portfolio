@@ -1,7 +1,8 @@
 #projects {
   padding: 2rem 4rem;
-  box-sizing: border-box;
   background-color: #0e1111;
+  margin: 0 auto; /* center wrapper itself */
+  box-sizing: border-box;
 }
 
 #projects h3 {
@@ -26,7 +27,6 @@
   gap: 2rem;
   max-width: 1300px;
   width: 100%;
-  margin: 0 auto; /* center wrapper itself */
 }
 
 .project-card {
@@ -68,8 +68,20 @@
   text-align: center;
 }
 
+@media (max-width: 1300px) {
+  #projects {
+    padding: 2rem 3rem;
+  }
+}
+
 @media (max-width: 950px) {
   .projects-wrapper {
     justify-content: center;
 }
+}
+
+@media (max-width: 800px) {
+  #projects {
+    padding: 2rem;
+  }
 }
