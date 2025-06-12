@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../res/portrait.png';
+import profileImg from '../../res/portrait.jpg';
 import './Showcase.css'
 import './global.css'
 
