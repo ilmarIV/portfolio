@@ -2,6 +2,17 @@
   padding: 2rem 4rem;
   box-sizing: border-box;
   background-color: #0e1111;
+}
+
+#projects h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff41;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;

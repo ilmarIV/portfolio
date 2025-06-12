@@ -9,17 +9,20 @@ const Projects = () => {
 
   return (
     <section className='w-1600' id="projects">
-      <div className='projects-wrapper'>
-        {projects.map((project, index) => (
-          <div
-            key={project.id || index}
-            className="project-card"
-            onClick={() => setActiveProject(project)}
-          >
-            <img src={project.image} alt={project.title} />
-            <h1>{project.title}</h1>
-          </div>
-        ))}
+      <h3>Some of the projects I have worked on</h3>
+      <div className='container'>
+        <div className='projects-wrapper'>
+          {projects.map((project, index) => (
+            <div
+              key={project.id || index}
+              className="project-card"
+              onClick={() => setActiveProject(project)}
+            >
+              <img src={project.image} alt={project.title} />
+              <h1>{project.title}</h1>
+            </div>
+          ))}
+        </div>
       </div>
 
       {activeProject && (

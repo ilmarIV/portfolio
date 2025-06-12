@@ -10,7 +10,7 @@
   },
   {
     "index": 1,
-    "image": "/res/saew2rk.png",
+    "image": "/res/voting.png",
     "title": "First dabble with php",
     "year": 2025,
     "description":  "This is a school project with the primary goal of utilizing databases. The application functions as a voting system, where the question to be voted on can be configured through an admin page. On the main page, users can enter their name and cast a vote either in favor of or against the question. Each voting session is limited to a duration of five minutes.",
@@ -19,10 +19,10 @@
   },
   {
     "index": 2,
-    "image": "/res/saew2rk.png",
+    "image": "/res/portfolio.png",
     "title": "This page, my portfolio",
     "year": 2025,
-    "description":  "Well, my porfolio. The website is built using React without a backend. The main requirements are to clearly display all my skills as outlined in my résumé and to showcase some of the more interesting projects I have worked on. All styling is done using pure CSS.",
+    "description":  "Well... my porfolio. The website is built using React without a backend. The main requirements are to clearly display all my skills as outlined in my résumé and to showcase some of the more interesting projects I have worked on. All styling is done using pure CSS.",
     "role": "Since this is a solo project, I was responsible for all aspects of its development.",
     "link": "https://vso24vodi.ita.voco.ee/portfolio/"
   }
